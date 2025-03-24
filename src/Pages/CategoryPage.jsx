@@ -56,6 +56,7 @@ const CategoryPage = ({ onAddToCart }) => {
               image={product.image}
               price={product.price}
               title={product.title}
+              product={product}
             />
           ))}
         </div>

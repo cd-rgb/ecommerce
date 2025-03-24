@@ -55,15 +55,16 @@ const CategorySection = () => {
 
   return (
     <div className="p-6 ">
-      <h2 className="text-4xl font-bold  mb-6 text-center">
+      <h2 className="text-5xl font-bold  mb-6 text-center tracking-wider">
         Shop by Category
       </h2>
+      <div className="border-t border-[#b79141] max-w-3xs m-auto flex items-center py-5"></div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {categories.map((category, index) => (
           <Link
             key={index}
             to={`/category/${category}`}
-            className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow text-center"
+            className="p-6 bg-white shadow-md hover:shadow-lg transition-shadow text-center"
           >
             <img
               src={categoryImages[category]}

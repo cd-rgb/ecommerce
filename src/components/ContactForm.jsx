@@ -1,65 +1,10 @@
 import React, { useState } from "react";
-import { Mail, Phone, MapPin } from "lucide-react"; // Icons from lucide-react
+
 
 const ContactForm = () => {
   return (
     <>
       <div className="p-6 ">
-        {/* Page Title */}
-        <h1 className="text-3xl font-bold  mb-8 text-center">
-          Get In Touch With Us
-        </h1>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-          <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
-            <Mail className="text-[#1E3A8A] mb-4" size={30} />
-            <h3 className="text-lg font-semibold text-[#2D3748] mb-2">Email</h3>
-            <p className="text-[#4A5568]">
-              <a
-                href="mailto:support@eshop.com"
-                className="hover:text-[#1E3A8A] transition-colors"
-              >
-                support@eshop.com
-              </a>
-            </p>
-          </div>
-
-          {/* Phone Numbers Column */}
-          <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
-            <Phone className="text-[#1E3A8A] mb-4" size={30} />
-            <h3 className="text-lg font-semibold text-[#2D3748] mb-2">
-              Phone Numbers
-            </h3>
-            <p className="text-[#4A5568]">
-              <a
-                href="tel:+11234567890"
-                className="hover:text-[#1E3A8A] transition-colors"
-              >
-                +1-123-456-7890
-              </a>
-            </p>
-            <p className="text-[#4A5568] mt-1">
-              <a
-                href="tel:+10987654321"
-                className="hover:text-[#1E3A8A] transition-colors"
-              >
-                +1-098-765-4321
-              </a>
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
-            <MapPin className="text-[#1E3A8A] mb-4" size={30} />
-            <h3 className="text-lg font-semibold text-[#2D3748] mb-2">
-              Address
-            </h3>
-            <p className="text-[#4A5568]">
-              123 E-Shop Street, <br />
-              Suite 456, <br />
-              New York, NY 10001
-            </p>
-          </div>
-        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Map Column */}
@@ -129,7 +74,7 @@ const ContactForm = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#1E3A8A] text-white p-3 rounded-md hover:bg-[#2B4A9B] transition-colors"
+                className="w-full bg-[#b79141] text-white p-3 rounded-md hover:bg-[#d0bb74] transition-colors"
               >
                 Send Message
               </button>

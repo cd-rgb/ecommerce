@@ -1,20 +1,18 @@
 @import "tailwindcss";
 
-body {
-  background-color: #111;
-  color: #fff;
+@layer base {
+  button {
+    background-color: #b79141;
+    font-family: "Mulish", Sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.9px;
+    border: 0px;
+    color: #fff;
+    padding: 12px 24px;
+  }
 }
-button {
-  background-color: #111;
-  font-family: "Mulish", Sans-serif;
-  font-size: 14px;
-  border-width: 1px;
-  border-radius: 50px;
-  color: #2bfff2;
-  background-image: linear-gradient(
-    199deg,
-    #11253a 0%,
-    var(--e-global-color-4932615) 100%
-  );
-  border-color: #2bfff261;
+
+body {
+  background-color: #000;
+  color: #fff;
 }

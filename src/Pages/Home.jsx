@@ -1,9 +1,10 @@
 import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
-import HomeSlider from "../components/HomeSlider";
+import HeroSection from "../components/HeroSection";
 import CategorySection from "../components/CategorySection";
 import ContactForm from "../components/ContactForm";
 import ProductCard from "../components/ProductCard"; // Import ProductCard to display products
+import CtaSection from "../components/CtaSection";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -30,9 +31,8 @@ const Home = () => {
 
   return (
     <>
-      <HomeSlider />
+      <HeroSection />
 
-      {/* About Section */}
       <section className="my-10 mx-4 md:mx-15">
         <div className="aboutcontainer flex flex-col md:flex-row justify-start items-center">
           <img
@@ -41,9 +41,8 @@ const Home = () => {
             className="rounded-lg shadow-md mt-6 w-full md:w-1/2 h-64 md:h-110 object-cover"
           />
           <section className="max-w-3xl my-10 mx-4 md:mx-15">
-            <h2 className="text-3xl font-semibold text-[#2bfff2] my-5">
-              Who We Are
-            </h2>
+            <h2 className="text-4xl font-semibold my-5">Who We Are</h2>
+            <div className="border-t border-[#b79141] max-w-2xs w-[150px] py-3"></div>
             <p className="text-white-600 mt-2 text-lg">
               Welcome to Coding With Yash, where innovation meets excellence! 🚀
               We are a team of passionate professionals dedicated to delivering
@@ -64,6 +63,9 @@ const Home = () => {
               undertake exceeds expectations. Join us on this exciting journey
               and let’s create something extraordinary together!
             </p>
+            <button className="bg-[#b79141] text-white mt-5 px-4 py-2 rounded-md hover:bg-[#d0bb74] transition-colors">
+              View Our Featured Section
+            </button>
           </section>
         </div>
       </section>
@@ -73,9 +75,10 @@ const Home = () => {
 
       {/* Product Listing Section */}
       <section className="my-10 mx-4 md:mx-15">
-        <h2 className="text-5xl font-bold mb-6 text-center">
+        <h2 className="text-5xl font-bold mb-6 text-center tracking-wider">
           Our Featured Products
         </h2>
+        <div className="border-t border-[#b79141] max-w-3xs m-auto flex items-center py-5"></div>
         {loading ? (
           <div className="text-center p-6">Loading products...</div>
         ) : error ? (
@@ -85,15 +88,17 @@ const Home = () => {
             {products.map((product) => (
               <ProductCard
                 key={product.id}
+                id={product.id}
                 image={product.image}
                 price={product.price}
                 title={product.title}
+                product={product}
               />
             ))}
           </div>
         )}
       </section>
-
+      <CtaSection />
       {/* Contact Form */}
       <ContactForm />
     </>

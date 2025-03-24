@@ -1,23 +1,18 @@
-import React, { useState } from "react";
-import PageBanner from "../components/PageBanner";
+import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ShieldCheck, Truck, RefreshCw } from "lucide-react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react"; 
 
-const Contact = () => {
+const CtaSection = () => {
   return (
     <>
-      <PageBanner title="CONTACT US" breadcrumb="Home / Contact Us" />
-        <div className="pt-20">
-      <h1 className="text-5xl font-bold  mb-6 text-center">
+      <h1 className="text-5xl font-bold  mb-6 text-center tracking-wider pt-20">
         Get In Touch With Us
       </h1>
-      <div className="border-t border-[#b79141] max-w-3xs m-auto flex items-center py-5"></div>
+      <div className="border-t border-[#b79141] max-w-3xs m-auto flex items-center py-5 px-3"></div>
 
-      </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-        <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 px-5 ">
+        <div className="flex flex-col items-center text-center p-6 bg-white shadow-md">
           <Mail className="text-[#b79141] mb-4" size={30} />
           <h3 className="text-lg font-semibold text-[#2D3748] mb-2">Email</h3>
           <p className="text-[#4A5568]">
@@ -31,7 +26,7 @@ const Contact = () => {
         </div>
 
         {/* Phone Numbers Column */}
-        <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
+        <div className="flex flex-col items-center text-center p-6 bg-white  shadow-md">
           <Phone className="text-[#b79141] mb-4" size={30} />
           <h3 className="text-lg font-semibold text-[#2D3748] mb-2">
             Phone Numbers
@@ -54,7 +49,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md">
+        <div className="flex flex-col items-center text-center p-6 bg-white shadow-md">
           <MapPin className="text-[#b79141] mb-4" size={30} />
           <h3 className="text-lg font-semibold text-[#2D3748] mb-2">Address</h3>
           <p className="text-[#4A5568]">
@@ -94,5 +89,4 @@ const Contact = () => {
     </>
   );
 };
-
-export default Contact;
+export default CtaSection;
