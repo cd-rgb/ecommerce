@@ -122,21 +122,21 @@ const ProductDetail = () => {
               {!isAddedToCart ? (
                 <button
                   onClick={handleAddToCart}
-                  className="bg-[#b79141] text-white px-4 py-2 rounded-md hover:bg-[#d0bb74] transition-colors"
+                  className="bg-[#b79141] text-white px-4 py-2 hover:bg-[#d0bb74] transition-colors"
                 >
                   Add to Cart
                 </button>
               ) : (
                 <button
                   onClick={handleViewCart}
-                  className="bg-[#b79141] text-white px-4 py-2 rounded-md hover:bg-[#d0bb74] transition-colors"
+                  className="bg-[#b79141] text-white px-4 py-2 hover:bg-[#d0bb74] transition-colors"
                 >
                   View Cart
                 </button>
               )}
               <Link
                 to="/shop"
-                className="bg-[#b79141] text-white px-4 py-2 rounded-md hover:bg-[#d0bb74] transition-colors"
+                className="bg-[#b79141] text-white px-4 py-2 hover:bg-[#d0bb74] transition-colors"
               >
                 Continue Shopping
               </Link>

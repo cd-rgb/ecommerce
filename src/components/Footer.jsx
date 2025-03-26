@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="p-10 md:px-20">
@@ -20,13 +21,10 @@ const Footer = () => {
             CATEGORIES
           </h2>
           <ul className="text-gray-600 dark:text-gray-400 text-sm space-y-1">
-            <li className="text-lg">Fashion Sneakers</li>
-            <li className="text-lg">Jackets</li>
-            <li className="text-lg">Outdoor Shop</li>
-            <li className="text-lg">Pants</li>
-            <li className="text-lg">Shirts & Tops</li>
-            <li className="text-lg">Swim Shop</li>
-            <li className="text-lg">Swimwear</li>
+            <li className="text-lg"><Link to="category/electronics">Electronics</Link></li>
+            <li className="text-lg"><Link to="category/jewellery">Jewellery</Link></li>
+            <li className="text-lg"><Link to="category/men's%20clothing">Men's Clothing</Link></li>
+            <li className="text-lg"><Link to="category/women's%20clothing">Women's clothing</Link></li>
           </ul>
         </div>
 
@@ -36,11 +34,28 @@ const Footer = () => {
             MY ACCOUNT
           </h2>
           <ul className="text-gray-600 dark:text-gray-400 text-sm space-y-1">
-            <li className="text-lg">Orders</li>
-            <li className="text-lg">Compare</li>
-            <li className="text-lg">Wishlist</li>
-            <li className="text-lg">Log In</li>
-            <li className="text-lg">Register</li>
+            <li className="text-lg">
+              <Link to="/" className="hover:text-[#b79141] transition-colors">
+                Home
+              </Link>
+            </li>
+            <li className="text-lg">
+              <Link
+                to="/about"
+                className="hover:text-[#b79141] transition-colors"
+              >
+                About
+              </Link>
+            </li>
+            <li className="text-lg">
+              <Link to="/shop">Shop</Link>
+            </li>
+            <li className="text-lg">
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li className="text-lg">
+              <Link to="/cart">Cart</Link>
+            </li>
           </ul>
         </div>
 

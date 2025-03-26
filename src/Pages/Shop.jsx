@@ -32,7 +32,7 @@ const Shop = () => {
     getData();
   }, []);
 
-  // Get unique categories
+
   const categories = [...new Set(products.map((product) => product.category))];
 
   // Apply filters
@@ -85,7 +85,7 @@ const Shop = () => {
                 onChange={(e) =>
                   setPriceRange([Number(e.target.value), priceRange[1]])
                 }
-                className="w-1/2 p-2 border rounded"
+                className="w-1/2 p-2 border rounded text-[#2D3748]"
                 placeholder="Min"
               />
               <span>-</span>
@@ -95,7 +95,7 @@ const Shop = () => {
                 onChange={(e) =>
                   setPriceRange([priceRange[0], Number(e.target.value)])
                 }
-                className="w-1/2 p-2 border rounded"
+                className="w-1/2 p-2 border rounded text-[#2D3748]"
                 placeholder="Max"
               />
             </div>
@@ -107,7 +107,7 @@ const Shop = () => {
             <select
               value={sortByName}
               onChange={(e) => setSortByName(e.target.value)}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded text-[#2D3748]"
             >
               <option value="">None</option>
               <option value="asc">A to Z</option>
@@ -121,7 +121,7 @@ const Shop = () => {
             <select
               value={minRating}
               onChange={(e) => setMinRating(Number(e.target.value))}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded text-[#2D3748]"
             >
               <option value={0}>All</option>
               <option value={1}>1 Star & Up</option>
@@ -137,7 +137,7 @@ const Shop = () => {
             <select
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded text-[#2D3748]"
             >
               <option value="">All Categories</option>
               {categories.map((category) => (

@@ -40,9 +40,11 @@ const CategoryPage = ({ onAddToCart }) => {
 
   return (
     <div className="p-6">
-      <h2 className="text-4xl font-bold  mb-6 text-center capitalize">
+      <h2 className="text-5xl font-bold  mb-6 text-center tracking-wider capitalize">
         {category} Products
       </h2>
+      <div className="border-t border-[#b79141] max-w-3xs m-auto flex items-center py-5"></div>
+
       {products.length === 0 ? (
         <p className="text-center text-[#4A5568]">
           No products found in this category.

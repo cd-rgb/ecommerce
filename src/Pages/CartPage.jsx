@@ -17,9 +17,7 @@ const CartPage = () => {
       <PageBanner title="CART" breadcrumb="Home / Cart" />
 
       <div className="max-w-7xl mx-auto p-6">
-        <h1 className="text-3xl font-bold mb-6">
-          Shopping Cart
-        </h1>
+        <h1 className="text-3xl font-bold mb-6">Shopping Cart</h1>
 
         {cartItems.length === 0 ? (
           <p className="text-gray-500 text-center">Your cart is empty.</p>
@@ -106,21 +104,15 @@ const CartPage = () => {
             </div>
 
             {/* Total and Buttons */}
-            <div className="mt-6 flex flex-col sm:flex-row justify-between items-center">
-              <Link
-                to="/"
-                className="mb-4 sm:mb-0 flex items-center space-x-2 px-6 py-3 bg-[#b79141] text-white rounded-full hover:bg-gray-800 transition-colors"
-              >
-                <span>&larr;</span>
-                <span>Continue Shopping</span>
-              </Link>
-              <div className="flex flex-col items-center sm:items-end">
-                <h2 className="text-xl font-bold mb-4">
-                  Total: ${totalPrice}
-                </h2>
-                <button className="px-6 py-3 bg-[#b79141] text-white rounded-full hover:bg-[#DC2626] transition-colors">
-                  Update Cart
-                </button>
+            <div className="mt-6 flex flex-col sm:flex-row items-center float-right">
+              <div className="flex flex-col items-center">
+                <h2 className="text-xl font-bold mb-4">Total: ${totalPrice}</h2>
+                <Link
+                  to="/checkout"
+                  className="mb-4 sm:mb-0 flex items-center space-x-2 px-4 py-2 bg-[#b79141] text-white hover:bg-[#d0bb74] transition-colors"
+                >
+                  Proceed to Checkout
+                </Link>
               </div>
             </div>
           </>

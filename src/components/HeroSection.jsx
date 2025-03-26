@@ -24,10 +24,10 @@ const HeroSection = () => {
           Coding With Yash
         </h1>
         <Link
-          to="/book"
+          to="/shop"
           className="bg-[#b79141] mt-10 text-white px-6 py-3 rounded-md hover:bg-[#C19A2E] transition-colors text-3xl"
         >
-          Book Now
+          View Products
         </Link>
       </div>
     </div>
