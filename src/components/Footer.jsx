@@ -22,7 +22,7 @@ const Footer = () => {
           </h2>
           <ul className="text-gray-600 dark:text-gray-400 text-sm space-y-1">
             <li className="text-lg"><Link to="category/electronics">Electronics</Link></li>
-            <li className="text-lg"><Link to="category/jewellery">Jewellery</Link></li>
+            <li className="text-lg"><Link to="category/jewelery">Jewellery</Link></li>
             <li className="text-lg"><Link to="category/men's%20clothing">Men's Clothing</Link></li>
             <li className="text-lg"><Link to="category/women's%20clothing">Women's clothing</Link></li>
           </ul>
