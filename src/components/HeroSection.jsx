@@ -21,7 +21,7 @@ const HeroSection = () => {
           This is{" "}
         </h2>
         <h1 className="text-white text-7xl md:text-8xl font-bold opacity-50 tracking-widest uppercase py-5 ">
-          Coding With Yash
+          Coding With Sanket
         </h1>
         <Link
           to="/shop"

@@ -16,7 +16,7 @@ const Home = () => {
   const getData = async () => {
     try {
       const response = await axios.get(
-        "https://fakestoreapi.com/products?limit=8"
+        "https://fakestoreapi.com/products"
       );
       setProducts(response.data);
       setLoading(false);
